@@ -1,0 +1,113 @@
+.nav {
+  background-color: #18b86e;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.card {
+background-color: #18b86e;
+font-family: 'Varela Round', sans-serif;
+}
+
+.parallaxheader{
+    font-family: 'Varela Round', sans-serif;
+}
+.grey-text{
+    font-size: 25px;
+    font-family: 'Varela Round', sans-serif;
+}
+.page-footer{
+    background-color:#18b86e;
+}
+
+ body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+ }
+ main {
+     flex: 1 0 auto;
+ }
+
+ /* label color */
+   .input-field label {
+     color: #18b86e;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #18b86e;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #18b86e;
+     box-shadow: 0 1px 0 0 #18b86e;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #18b86e;
+     box-shadow: 0 1px 0 0 #18b86e;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #18b86e;
+     box-shadow: 0 1px 0 0 #18b86e;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #18b86e;
+   }
+.collapsible-header{
+    color:#18b86e
+}
+.collapsible-body{
+     color:grey
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.page-footer .col {
+    text-align: center;
+}
+
+.page-footer h5 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+}
+.page-footer p {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+.fa:hover {
+    opacity: 0.2;
+}
+
+
+
+
+.fa-facebook {
+    color: white;
+}
+
+
+.fa-twitter {
+    color: white;
+}
+
+.button{
+    text-align: center;
+}
+.btn{
+    background-color:#18b86e;
+}
