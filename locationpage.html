@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <!--My Style Sheet-->
+      <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
+      <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+    </head>
+
+    <body>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <script>$( document ).ready(function(){$(".button-collapse").sideNav();})</script>
+            <script>$( document ).ready(function(){$(".dropdown-trigger").dropdown();})</script>
+            <script>$(document).ready(function() {$('select').material_select();});</script>
+            <script>$(document).ready(function(){$('.sidenav').sidenav();});</script>
+            <script>$(document).ready(function(){$('.slider').slider();});</script>
+
+              <!--Navbar Start-->
+
+
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="beginner_guide.html">Beginner</a></li>
+                    <li class="divider"></li>
+                    <li><a href="intermediate_guide.html">Intermediate</a></li>
+                    <li class="divider"></li>
+
+                </ul>
+                <ul id="dropdown2" class="dropdown-content">
+                  <li><a href="beginner_guide.html">Beginner</a></li>
+                  <li class="divider"></li>
+                  <li><a href="intermediate_guide.html">Intermediate</a></li>
+                  <li class="divider"></li>
+
+                </ul>
+              <nav class ="nav">
+                  <div class="nav-wrapper container">
+                    <a href="index.html" class="brand-logo"><img src ="assets/bbbikesplaceholder.jpg"></a>
+                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li><a href="informationpage.html">Information</a></li>
+                      <li><a href="viewpage.html">View</a></li>
+                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+                      <li><a href="locationpage.html">Locations</a></li>
+                      <li><a href="downloadspage.html">Downloads</a></li>
+                    </ul>
+                  </div>
+                </nav>
+
+                <ul class="sidenav" id="mobile-demo">
+                  <li><a href="informationpage.html">Information</a></li>
+                  <li><a href="viewpage.html">View</a></li>
+                  <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+                  <li><a href="locationpage.html">Locations</a></li>
+                  <li><a href="downloadspage.html">Downloads</a></li>
+                  </ul>
+  <!--Navbar End-->
+
+
+
+
+        <div class="slider">
+ <ul class="slides">
+   <li>
+     <video id="my-video" class="video" muted loop>
+       <source src="assets/test.mp4" type="video/mp4">
+     </video> <!-- random image -->
+     <div class="caption left-align">
+       <h3>France</h3>
+       <h5 class="light grey-text text-lighten-3">E.</h5>
+     </div>
+   </li>
+   <li>
+     <img src="http://place-hold.it/1920x1080"> <!-- random image -->
+     <div class="caption left-align">
+       <h3>Stafford</h3>
+       <h5 class="light grey-text text-lighten-3">E</h5>
+     </div>
+   </li>
+   <li>
+     <img src="http://place-hold.it/1920x1080"> <!-- random image -->
+     <div class="caption left-align">
+       <h3>Cannock Chase</h3>
+       <h5 class="light grey-text text-lighten-3">E</h5>
+     </div>
+   </li>
+   <li>
+     <img src="http://place-hold.it/1920x1080"> <!-- random image -->
+     <div class="caption left-align">
+       <h3>E</h3>
+       <h5 class="light grey-text text-lighten-3">E</h5>
+     </div>
+   </li>
+ </ul>
+</div>
+
+<script>
+(function() {
+/**
+* Video element
+* @type {HTMLElement}
+*/
+var video = document.getElementById("my-video");
+
+/**
+* Check if video can play, and play it
+*/
+video.addEventListener( "canplay", function() {
+video.play();
+});
+})();
+</script>
+<br>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l12 s12">
+        <h5 class="white-text">Find us at</h5>
+        <p class="grey-text text-lighten-4">Facebook - </p>
+         <p class="grey-text text-lighten-4">Twitter - </p>
+        <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+     2018 B.B Bikes - Benjamin Gittus
+    </div>
+  </div>
+</footer>
+
+    </body>
+  </html>
