@@ -78,9 +78,36 @@ font-family: 'Varela Round', sans-serif;
     color: white;
 }
 
-.button{
+.bgvideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+nav.nav-center ul{
+        text-align: center;
+    }
+    
+nav.nav-center ul li{
+display:inline;
+    float:none; 
+}
+
+nav.nav-center ul li a{
+display:inline-block;
+}
+
+.homepage{
+    justify-content: center;
     text-align: center;
 }
-.btn{
-    background-color:#18b86e;
+.logo{
+    margin-top: 200px; 
 }

@@ -14,6 +14,7 @@
     </head>
 
     <body>
+    
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
             <script type="text/javascript" src="js/materialize.min.js"></script>
             <script>$( document ).ready(function(){$(".button-collapse").sideNav();})</script>
@@ -22,44 +23,7 @@
             <script>$(document).ready(function(){$('.sidenav').sidenav();});</script>
 
 
-              <!--Navbar Start"-->
-        <!--  <ul id="dropdown1" class="dropdown-content">
-              <li><a href="beginner_guide.html">Beginner</a></li>
-              <li class="divider"></li>
-              <li><a href="intermediate_guide.html">Intermediate</a></li>
-              <li class="divider"></li>
-
-          </ul>
-          <ul id="dropdown2" class="dropdown-content">
-            <li><a href="beginner_guide.html">Beginner</a></li>
-            <li class="divider"></li>
-            <li><a href="intermediate_guide.html">Intermediate</a></li>
-            <li class="divider"></li>
-
-          </ul>
-          <nav class="nav">
-          <div class="nav-wrapper container">
-            <a href="index.html" class="brand-logo left"><img src ="assets/bbbikesplaceholder.jpg"></a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-                  <li><a href="informationpage.html">Information</a></li>
-                  <li><a href="viewpage.html">View</a></li>
-                  <li><a class = "dropdown-button" href="#" data-activates="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
-                  <li><a href="locationspage.html">Locations</a></li>
-                  <li><a href="downloadspage.html">Downloads</a></li>
-            </ul>
-
-               <ul class="side-nav" id="mobile-demo">
-                 <li><a href="informationpage.html">Information</a></li>
-                 <li><a href="viewpage.html">View</a></li>
-                 <li><a class = "dropdown-button" href="#" data-activates="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
-                 <li><a href="locationspage.html">Locations</a></li>
-                 <li><a href="downloadspage.html">Downloads</a></li>
-            </ul>
-          </div>
-        </nav>-->
-              <!--Navbar End-->
+              
                 <ul id="dropdown1" class="dropdown-content">
                     <li><a href="beginner_guide.html">Beginner</a></li>
                     <li class="divider"></li>
@@ -74,13 +38,13 @@
                   <li class="divider"></li>
 
                 </ul>
-              <nav class ="nav">
-                  <div class="nav-wrapper container">
-                    <a href="index.html" class="brand-logo"><img src ="assets/bbbikesplaceholder.jpg"></a>
+              <nav class ="nav nav-center">
+                  <div class="nav-wrapper">
                      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <ul id="nav-mobile" class="hide-on-med-and-down">
                       <li><a href="informationpage.html">Information</a></li>
                       <li><a href="viewpage.html">View</a></li>
+                        <!--<li><img src ="assets/bbbikesplaceholder.jpg"></li> -->
                       <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
                       <li><a href="locationpage.html">Locations</a></li>
                       <li><a href="downloadspage.html">Downloads</a></li>
@@ -95,9 +59,16 @@
                   <li><a href="locationpage.html">Locations</a></li>
                   <li><a href="downloadspage.html">Downloads</a></li>
                   </ul>
+        <main>
+                <div class="homepage valign-wrapper">
+                    <div class="row">
+                        <div class="col l12 m12 s12"> 
+                            <img class ="logo" src="assets/bbbikesplaceholder.jpg"/>
+                        </div>    
+                    </div> 
+                </div>
 
-
-                  <video id="my-video" class="video" muted loop>
+                  <video id="my-video" class="bgvideo" muted loop>
                     <source src="assets/test.mp4" type="video/mp4">
                   </video>
                   
@@ -122,27 +93,16 @@
 
 
 
-
+        </main>
 
 
         <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l12 s12">
-                <h5 class="white-text">Find us at</h5>
-                <p class="grey-text text-lighten-4">Facebook - </p>
-                 <p class="grey-text text-lighten-4">Twitter - </p>
-                <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/" class="fa fa-twitter"></a>
-              </div>
-            </div>
-          </div>
           <div class="footer-copyright">
             <div class="container">
              2018 B.B Bikes - Benjamin Gittus
             </div>
           </div>
         </footer>
-
+        
     </body>
   </html>
