@@ -1,5 +1,5 @@
 .nav {
-  background-color: #798081;
+  background-color: #2C3E50;
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -16,7 +16,7 @@ font-family: 'Varela Round', sans-serif;
     font-family: 'Varela Round', sans-serif;
 }
 .page-footer{
-    background-color:#798081;
+    background-color:#2C3E50;
 }
 
  body {
@@ -29,7 +29,7 @@ font-family: 'Varela Round', sans-serif;
  }
 
 .collapsible-header{
-    color:#18b86e
+    color:#2C3E50
 }
 .collapsible-body{
      color:grey
@@ -94,10 +94,10 @@ font-family: 'Varela Round', sans-serif;
 nav.nav-center ul{
         text-align: center;
     }
-    
+
 nav.nav-center ul li{
 display:inline;
-    float:none; 
+    float:none;
 }
 
 nav.nav-center ul li a{
@@ -109,5 +109,11 @@ display:inline-block;
     text-align: center;
 }
 .logo{
-    margin-top: 200px; 
+    margin-top: 200px;
+}
+
+.background{
+  background: #bdc3c7;
+background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
+background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
 }
