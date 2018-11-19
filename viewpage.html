@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <!--My Style Sheet-->
+      <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
+      <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+      <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+    </head>
+
+    <body>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+      <script type="text/javascript" src="tooltipster/dist/js/plugins/tooltipster/SVG/tooltipster-SVG.min.js"></script>
+      <script>$( document ).ready(function(){$(".button-collapse").sideNav();});</script>
+      <script>$( document ).ready(function(){$(".dropdown-trigger").dropdown();});</script>
+      <script>$(document).ready(function() {$('select').material_select();});</script>
+      <script>$(document).ready(function(){$('.sidenav').sidenav();});</script>
+      <script>$(document).ready(function() {$('.tooltip').tooltipster();});</script>
+
+              <!--Navbar Start-->
+
+
+              <ul id="dropdown1" class="dropdown-content">
+                  <li><a href="beginner_guide.html">Beginner</a></li>
+                  <li class="divider"></li>
+                  <li><a href="intermediate_guide.html">Intermediate</a></li>
+                  <li class="divider"></li>
+
+              </ul>
+              <ul id="dropdown2" class="dropdown-content">
+                <li><a href="beginner_guide.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="intermediate_guide.html">Intermediate</a></li>
+                <li class="divider"></li>
+
+              </ul>
+            <nav class ="nav nav-center">
+                <div class="nav-wrapper">
+                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><a href="informationpage.html">Information</a></li>
+                    <li><a href="viewpage.html">View</a></li>
+                      <!--<li><img src ="assets/bbbikesplaceholder.jpg"></li> -->
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="locationpage.html">Locations</a></li>
+                    <li><a href="downloadspage.html">Downloads</a></li>
+                  </ul>
+                </div>
+              </nav>
+
+              <ul class="sidenav" id="mobile-demo">
+                <li><a href="informationpage.html">Information</a></li>
+                <li><a href="viewpage.html">View</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="locationpage.html">Locations</a></li>
+                <li><a href="downloadspage.html">Downloads</a></li>
+                </ul>
+  <!--Navbar End-->
+        <div class= background <"mask rgba-gradient d-flex justify-content-center align-items-center">
+
+        <br>
+<main>
+           <div class="container">
+
+             <div class="img-container">
+               <svg viewBox="0 0 960 714" height="100%" width="100%" version="1.1" id="svg4160">
+                     <image
+                  width="1024"
+                  height="582"
+                  preserveAspectRatio="none"
+                  href="assets/bike1.png"
+                  id=""
+              />
+               <rect
+                  id="one"
+                     data-placement="top" title="One!"
+                  x="115.62" y="60.75" width="70" height ="90"
+
+             />
+
+               <rect
+                  id="two"
+                     class="tooltip" title="Two!"
+                  x="110.62" y="425.75" width="70" height ="90"
+             />
+            <script>$(document).ready(function(){$('.tooltip').tooltipster();});</script>
+             <rect
+                id="two"
+                   data-toggle="tooltip" data-placement="top" title="Two!"
+                x="425.62" y="260.20" width="70" height ="60"
+           />
+           <rect
+              id="two"
+                 data-toggle="tooltip" data-placement="top" title="Two!"
+              x="225.62" y="260.20" width="70" height ="60"
+         />
+               <path
+                     class="path"
+                  id="three"
+                     data-placement="top" title="Three!"
+                  d="m 670.77765,331.23283 29.50757,15.37718 13.09138,9.97439 4.5716,0.4156 47.58614,-53.61234 0.8312,-3.117 -13.71478,-8.10419 -30.54657,-16.41618 -1.4546,0.8312 -48.41734,51.74214 z"
+
+              />
+             </svg>
+
+             <img src="assets/B.B-Bikes-Logo.png" class="tooltip" title="This is my image's tooltip message!" />
+             <script> $(document).ready(function(){$('.tooltip').tooltipster();});</script>
+             </div>
+<script>$(document).ready(function(){$('.path').tooltip({container:'.img-container'});});</script>
+</div>
+
+</div>
+</main>
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+     2018 B.B Bikes - Benjamin Gittus
+    </div>
+  </div>
+</footer>
+
+    </body>
+  </html>

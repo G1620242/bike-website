@@ -128,3 +128,28 @@ background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
 }
 
 
+.img-container {
+  width: 70%;
+    margin: 0 auto;
+}
+/*path {
+  fill: transparent;
+  transition: 1s;
+  stroke: transparent;
+  stroke-width: 2px;
+  opacity: 1;
+}*/
+#screen:hover {
+  fill: red;
+}
+#one:hover {
+  stroke: green;
+}
+#two:hover {
+  fill: blue;
+  stroke: yellow
+}
+#three:hover {
+  fill: grey;
+  opacity: 0.5
+}
