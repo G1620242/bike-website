@@ -1,9 +1,14 @@
 body {
+/*
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: black;
 	color: white;
+*/
+    display: flex;
+     min-height: 100vh;
+     flex-direction: column;
 }
 img {
 	width: 400px;
