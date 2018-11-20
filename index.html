@@ -59,6 +59,11 @@
                   <li><a href="locationpage.html">Locations</a></li>
                   <li><a href="downloadspage.html">Downloads</a></li>
                   </ul>
+
+                  <embed src="assets/bikeaudio.mp3" autostart="true" loop="false"
+                    width="2" height="0">
+                  </embed>
+
         <main>
                 <div class="homepage valign-wrapper">
                     <div class="row">
@@ -79,10 +84,6 @@
                   * @type {HTMLElement}
                   */
                   var video = document.getElementById("my-video");
-
-                  /**
-                  * Check if video can play, and play it
-                  */
                   video.addEventListener( "canplay", function() {
                   video.play();
                   });

@@ -76,14 +76,24 @@
                   <p>I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.</p>
                   </div>
-                  <div class="card-action" > 
+                  <div class="card-action" >
                     <p class = "center-align" >
-                    <a href="assets/B.B-Bikes-Logo.png" download>Download</a>
+                      <canvas id="c" width="400" height="280"></canvas>
+
+                      <a id="download-canvas" href="assets/B.B.Bikes-Logo.png" target="_blank" >Download</a>
                   </p>
                   </div>
                 </div>
               </div>
+              <script>
+              $( document ).ready (function() {
+                var canvas = document.getElementById('c'),
+                cxt = canvas.getContext('2d'),
+                downloadLink = document.getElementById('download-canvas');
 
+                downloadLink.href = canvas.toDataURL();
+                downloadLink.download = "B.B.Bikes-Logo.png"; })();
+                </script>
               <div class="row col s6">
                 <div class="card large">
                   <div class="card-image">
@@ -95,7 +105,7 @@
                      </div>
                      <div class="card-action">
                        <p class = "center-align">
-                        <a href="assets/B.B-Bikes-Logo.png" download> Download</a> 
+                        <a href="assets/B.B-Bikes-Logo.png" download> Download</a>
                      </p>
                      </div>
                    </div>
@@ -109,7 +119,7 @@
           </div>
         </div>
 </div>
-    
+
 
 </main>
 
