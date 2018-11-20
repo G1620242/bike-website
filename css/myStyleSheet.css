@@ -84,6 +84,7 @@ font-family: 'Varela Round', sans-serif;
 }
 
 .bgvideo {
+  overflow: hidden;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -112,10 +113,9 @@ display:inline-block;
 .homepage{
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
-.logo{
-    margin-top: 200px;
-}
+
 
 .background{
   background: #bdc3c7;
