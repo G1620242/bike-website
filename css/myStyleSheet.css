@@ -153,3 +153,7 @@ background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
   fill: grey;
   opacity: 0.5
 }
+
+.section{
+  background-color: #2C3E50;
+}
