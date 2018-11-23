@@ -10,15 +10,15 @@
 
       <!--My Style Sheet-->
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
-      <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
       <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     </head>
 
     <body>
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
-      <script type="text/javascript" src="tooltipster/dist/js/plugins/tooltipster/SVG/tooltipster-SVG.min.js"></script>
+      <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+      <script type="text/javascript" src="js/plugins/tooltipster/SVG/tooltipster-SVG.min.js"></script>
       <script>$( document ).ready(function(){$(".button-collapse").sideNav();});</script>
       <script>$( document ).ready(function(){$(".dropdown-trigger").dropdown();});</script>
       <script>$(document).ready(function() {$('select').material_select();});</script>
@@ -48,7 +48,7 @@
                   <ul id="nav-mobile" class="hide-on-med-and-down">
                     <li><a href="informationpage.html">Information</a></li>
                     <li><a href="viewpage.html">View</a></li>
-                      <!--<li><img src ="assets/bbbikesplaceholder.jpg"></li> -->
+                    <li><a href="index.html"><img src="assets/B.B-Bikes-Logo3.png"></a></li>
                     <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a href="locationpage.html">Locations</a></li>
                     <li><a href="downloadspage.html">Downloads</a></li>
@@ -81,7 +81,7 @@
               />
                <rect
                   id="one"
-                     data-placement="top" title="One!"
+                     class="tooltip"data-placement="top" title="One!"
                   x="115.62" y="60.75" width="70" height ="90"
 
              />
@@ -111,23 +111,28 @@
 
               />
              </svg>
-
-
+             <script>$(document).ready(function(){$('.tooltip').tooltipster();});</script>
+<script>$(document).ready(function(){$('.path').tooltip({container:'.img-container'});});</script>
+<hr>
              </div>
              <div class="row col s12">
                 <div class="row col s6">
                   <h4>Different bikes have a variety of different sounds</h4>
                   <p>The type of bike you own means that the sound of the bike can change making the bike much louder or quieter to listen to an example underneath the image. </p>
                 </div>
-                <div class="row col s6">
-                  <img src="assets/bodybikepic1.jpg" width="500" height="250">
 
-                  <audio controls autoplay>
-                      <source src="assets/bike-audio-full.mp3" type="audio/mpeg">
-                      </audio>
-           </div>
+                  <img class="responsive-img"src ="assets/bodybikepic1.jpg">
+<!-- width="500" height="250" -->
+<div class='audio-container'>
+   <audio controls>
+    <source src="assets/bike-audio-full.mp3" type="audio/mpeg">
+   </audio>
 </div>
-<script>$(document).ready(function(){$('.path').tooltip({container:'.img-container'});});</script>
+<img src="assets/B.B-Bikes-Logo.png" class="tooltip" title="This is my image's tooltip message!" />
+  </div>
+</div>
+
+
 </main>
 <footer class="page-footer">
   <div class="footer-copyright">
