@@ -11,15 +11,20 @@
       <!--My Style Sheet-->
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
       <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
     </head>
 
     <body>
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+      <script type="text/javascript" src="js/plugins/tooltipster/SVG/tooltipster-SVG.min.js"></script>
       <script>$( document ).ready(function(){$(".button-collapse").sideNav();});</script>
       <script>$( document ).ready(function(){$(".dropdown-trigger").dropdown();});</script>
       <script>$(document).ready(function() {$('select').material_select();});</script>
       <script>$(document).ready(function(){$('.sidenav').sidenav();});</script>
+      <script>$(document).ready(function() {$('.tooltip').tooltipster();});</script>
+
 
               <!--Navbar Start-->
 
@@ -70,7 +75,9 @@
 
         <div class="column">
          <div class="col s12 m6 l6">
-            <img class="responsive-img" src="http://place-hold.it/1920x1080">
+            <img class="responsive-img" "tooltip" Title="This is" src="assets/BikeImage1.jpg">
+            <img src="assets/B.B-Bikes-Logo2.png" class="tooltip" title="This is my image's tooltip message!" />
+            <script>$(document).ready(function() {$('.tooltip').tooltipster();});</script>
          </div>
 
          <div class="col s12 m6 l6">
