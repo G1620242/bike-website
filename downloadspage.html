@@ -1,113 +1,147 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<html>
 
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-      <!--My Style Sheet-->
-      <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
-      <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <body>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-            <script type="text/javascript" src="js/materialize.min.js"></script>
-            <script>$(document ).ready(function(){$(".button-collapse").sideNav();});</script>
-            <script>$(document ).ready(function(){$(".dropdown-trigger").dropdown();});</script>
-            <script>$(document).ready(function() {$('select').material_select();});</script>
-            <script>$(document).ready(function(){$('.sidenav').sidenav();});</script>
+    <!--My Style Sheet-->
+    <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+  </head>
 
-              <!--Navbar Start-->
+  <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".button-collapse").sideNav();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-trigger").dropdown();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('select').material_select();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.sidenav').sidenav();
+      });
+    </script>
+
+    <!--Navbar Start-->
 
 
-              <ul id="dropdown1" class="dropdown-content">
-                  <li><a href="beginner_guide.html">Beginner</a></li>
-                  <li class="divider"></li>
-                  <li><a href="intermediate_guide.html">Intermediate</a></li>
-                  <li class="divider"></li>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="beginner_guide.html">Beginner</a></li>
+      <li class="divider"></li>
+      <li><a href="intermediate_guide.html">Intermediate</a></li>
+      <li class="divider"></li>
 
-              </ul>
-              <ul id="dropdown2" class="dropdown-content">
-                <li><a href="beginner_guide.html">Beginner</a></li>
-                <li class="divider"></li>
-                <li><a href="intermediate_guide.html">Intermediate</a></li>
-                <li class="divider"></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="beginner_guide.html">Beginner</a></li>
+      <li class="divider"></li>
+      <li><a href="intermediate_guide.html">Intermediate</a></li>
+      <li class="divider"></li>
 
-              </ul>
-            <nav class ="nav nav-center">
-                <div class="nav-wrapper">
-                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                  <ul id="nav-mobile" class="hide-on-med-and-down">
-                    <li><a href="informationpage.html">Information</a></li>
-                    <li><a href="viewpage.html">View</a></li>
-                  <li><a href="index.html"><img src="assets/B.B-Bikes-Logo3.png"></a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a href="locationpage.html">Locations</a></li>
-                    <li><a href="downloadspage.html">Downloads</a></li>
-                  </ul>
-                </div>
-              </nav>
+    </ul>
+    <nav class="nav nav-center">
+      <div class="nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+          <li><a href="informationpage.html">Information</a></li>
+          <li><a href="viewpage.html">View</a></li>
+          <li><a href="index.html"><img src="assets/B.B-Bikes-Logo3.png"></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="locationpage.html">Locations</a></li>
+          <li><a href="downloadspage.html">Downloads</a></li>
+        </ul>
+      </div>
+    </nav>
 
-              <ul class="sidenav" id="mobile-demo">
-                <li><a href="informationpage.html">Information</a></li>
-                <li><a href="viewpage.html">View</a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a href="locationpage.html">Locations</a></li>
-                <li><a href="downloadspage.html">Downloads</a></li>
-                </ul>
-  <!--Navbar End-->
-        <div class= background <"mask rgba-gradient d-flex justify-content-center align-items-center">
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="informationpage.html">Information</a></li>
+      <li><a href="viewpage.html">View</a></li>
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="locationpage.html">Locations</a></li>
+      <li><a href="downloadspage.html">Downloads</a></li>
+    </ul>
+    <!--Navbar End-->
+    <div class=background <"mask rgba-gradient d-flex justify-content-center align-items-center">
 
-        <br>
-<main>
+      <br>
+      <main>
         <div class="container">
 
-        <div class="row col s12">
-           <div class="row col l6,m6,s6">
-             <img class="responsive-img" src="assets/BikeImage6.jpg">
-             <p class="center-align">
-             <a class="waves-effect waves-light btn"  href="assets/B.B-Bikes-Logo.png" download>Download</a>
-           </p>
+          <div class="row col s12">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <div class="container">
+                  <img class="responsive-img" src="assets/BikeImage6.jpg">
+                  <p class="center-align">
+                    <a class="waves-effect waves-light btn" href="assets/B.B-Bikes-Logo.png" download>Download</a>
+                  </p>
+                </div>
               </div>
+            </div>
 
-              <div class="row col l6,m6,s6">
-                <img class="responsive-img" src="assets/BikeImage5.jpg">
-                <p class="center-align">
-                <a class="waves-effect waves-light btn"  href="assets/B.B-Bikes-Logo.png" download>Download</a>
-              </p>
-                 </div>
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <div class="container">
+                  <img class="responsive-img" src="assets/BikeImage5.jpg">
+                  <p class="center-align">
+                    <a class="waves-effect waves-light btn" href="assets/B.B-Bikes-Logo.png" download>Download</a>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <div class="row col l6,m6,s6">
-             <img class="responsive-img" src="assets/BikeImage7.jpg">
-             <p class="center-align">
-             <a class="waves-effect waves-light btn"  href="assets/B.B-Bikes-Logo.png" download>Download</a>
-           </p>
+            <div class="row ">
+              <div class="col s12 m12 l12">
+                <div class="container">
+                  <img class="responsive-img" src="assets/BikeImage7.jpg">
+                  <p class="center-align">
+                    <a class="waves-effect waves-light btn" href="assets/B.B-Bikes-Logo.png" download>Download</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <div class="container">
+                  <img class="responsive-img" src="assets/BikeImage4.jpg">
+                  <p class="center-align">
+                    <a class="waves-effect waves-light btn" href="assets/B.B-Bikes-Logo.png" download>Download</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-
-
-        <div class="row col l6,m6,s6">
-           <img class="responsive-img" src="assets/BikeImage4.jpg">
-           <p class="center-align">
-           <a class="waves-effect waves-light btn"  href="assets/B.B-Bikes-Logo.png" download>Download</a>
-         </p>
         </div>
-</div>
-</div>
 
 
-</main>
+      </main>
 
-<footer class="page-footer">
-  <div class="footer-copyright">
-    <div class="container">
-     2018 B.B Bikes - Benjamin Gittus
-    </div>
-  </div>
-</footer>
+      <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+            2018 B.B Bikes - Benjamin Gittus
+          </div>
+        </div>
+      </footer>
 
-    </body>
-  </html>
+  </body>
+
+</html>
