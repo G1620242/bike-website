@@ -170,3 +170,33 @@ color: black;
 background-color: black;
 border: none;
 }
+.logo
+{
+  position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 100;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (max-width: 600px){
+  .logo{
+    height:25%;
+  }
+}
+.logo {
+-webkit-transition: opacity 200ms linear;
+-moz-transition: opacity 200ms linear;
+-ms-transition: opacity 200ms linear;
+-o-transition: opacity 200ms linear;
+transition: opacity 200ms linear;
+}
+
+.logo:hover{
+opacity: 0;
+-webkit-opacity: 0;
+-moz-opacity: 0;
+filter: alpha(opacity=100);
+}
