@@ -1,106 +1,122 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<html>
 
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-      <!--My Style Sheet-->
-        <!--<link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/> -->
-         <link rel="stylesheet" href="styles.css" media="screen">
-      <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <body>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>$( document ).ready(function(){$(".button-collapse").sideNav();});</script>
-      <script>$( document ).ready(function(){$(".dropdown-trigger").dropdown();});</script>
-      <script>$(document).ready(function() {$('select').material_select();});</script>
-      <script>$(document).ready(function(){$('.sidenav').sidenav();});</script>
-        <script type="text/javascript" src="../build/phaser.min.js"></script>
-        <script type="text/javascript" src="scripts/Preloader.js"></script>
-	   <script type="text/javascript" src="scripts/MainMenu.js"></script>
-	   <script type="text/javascript" src="scripts/MainGame.js"></script>
+    <!--My Style Sheet-->
+    <link href="styles.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+  </head>
 
-              <!--Navbar Start-->
+  <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".button-collapse").sideNav();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-trigger").dropdown();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('select').material_select();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.sidenav').sidenav();
+      });
+    </script>
+    <script type="text/javascript" src="../build/phaser.min.js"></script>
+    <script type="text/javascript" src="scripts/Preloader.js"></script>
+    <script type="text/javascript" src="scripts/MainMenu.js"></script>
+    <script type="text/javascript" src="scripts/MainGame.js"></script>
 
-
-              <ul id="dropdown1" class="dropdown-content">
-                  <li><a href="beginner_guide.html">Beginner</a></li>
-                  <li class="divider"></li>
-                  <li><a href="intermediate_guide.html">Intermediate</a></li>
-                  <li class="divider"></li>
-
-              </ul>
-              <ul id="dropdown2" class="dropdown-content">
-                <li><a href="beginner_guide.html">Beginner</a></li>
-                <li class="divider"></li>
-                <li><a href="intermediate_guide.html">Intermediate</a></li>
-                <li class="divider"></li>
-
-              </ul>
-            <nav class ="nav nav-center">
-                <div class="nav-wrapper">
-                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                  <ul id="nav-mobile" class="hide-on-med-and-down">
-                    <li><a href="informationpage.html">Information</a></li>
-                    <li><a href="viewpage.html">View</a></li>
-                    <li><a href="index.html"><img src="assets/B.B-Bikes-Logo3.png"></a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a href="locationpage.html">Locations</a></li>
-                    <li><a href="downloadspage.html">Downloads</a></li>
-                  </ul>
-                </div>
-              </nav>
-
-              <ul class="sidenav" id="mobile-demo">
-                <li><a href="informationpage.html">Information</a></li>
-                <li><a href="viewpage.html">View</a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a href="locationpage.html">Locations</a></li>
-                <li><a href="downloadspage.html">Downloads</a></li>
-                </ul>
-  <!--Navbar End-->
-        <div class= background <"mask rgba-gradient d-flex justify-content-center align-items-center">
-
-        <br>
-<main>
-<div id="wrapper"></div>
-
-<script type="text/javascript">
-		window.onload = function() {
-
-			//	Create your Phaser game and inject it into the wrapper div.
-			//	We did it in a window.onload event, but you can do it anywhere (requireJS load, anonymous function, jQuery dom ready)
-			var game = new this.Phaser.Game(800, 600, this.Phaser.AUTO, 'wrapper');
-
-			//	Add the States your game has.
-			//	You don't have to do this in the html, it could be done in your Boot state too, but for simplicity we will keep it here.
-			game.state.add('Preloader', this.BasicGame.Preloader);
-			game.state.add('MainMenu', this.BasicGame.MainMenu);
-			game.state.add('Game', this.BasicGame.Game);
-
-			//	Now start the preloader state.
-			game.state.start('Preloader');
-
-		};
-</script>
+    <!--Navbar Start-->
 
 
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="beginner_guide.html">Beginner</a></li>
+      <li class="divider"></li>
+      <li><a href="intermediate_guide.html">Intermediate</a></li>
+      <li class="divider"></li>
 
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="beginner_guide.html">Beginner</a></li>
+      <li class="divider"></li>
+      <li><a href="intermediate_guide.html">Intermediate</a></li>
+      <li class="divider"></li>
 
-</main>
-<footer class="page-footer">
-  <div class="footer-copyright">
-    <div class="container">
-     2018 B.B Bikes - Benjamin Gittus
-    </div>
-  </div>
-</footer>
+    </ul>
+    <nav class="nav nav-center">
+      <div class="nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+          <li><a href="informationpage.html">Information</a></li>
+          <li><a href="viewpage.html">View</a></li>
+          <li><a href="index.html"><img src="assets/B.B-Bikes-Logo3.png"></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="locationpage.html">Locations</a></li>
+          <li><a href="downloadspage.html">Downloads</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    </body>
-  </html>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="informationpage.html">Information</a></li>
+      <li><a href="viewpage.html">View</a></li>
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="locationpage.html">Locations</a></li>
+      <li><a href="downloadspage.html">Downloads</a></li>
+    </ul>
+    <!--Navbar End-->
+    <div class=background <"mask rgba-gradient d-flex justify-content-center align-items-center"></div>
+      <br>
+      <div class="content">
+        <div class="container">
+          <div class="gamewrapper" id="wrapper">
+          <h1>Game</h1>
+              <script type="text/javascript">
+                window.onload = function () {
+
+                  //	Create your Phaser game and inject it into the wrapper div.
+                  //	We did it in a window.onload event, but you can do it anywhere (requireJS load, anonymous function, jQuery dom ready)
+                  var game = new this.Phaser.Game(800, 600, this.Phaser.AUTO, 'wrapper');
+
+                  //	Add the States your game has.
+                  //	You don't have to do this in the html, it could be done in your Boot state too, but for simplicity we will keep it here.
+                  game.state.add('Preloader', this.BasicGame.Preloader);
+                  game.state.add('MainMenu', this.BasicGame.MainMenu);
+                  game.state.add('Game', this.BasicGame.Game);
+
+                  //	Now start the preloader state.
+                  game.state.start('Preloader');
+
+                };
+              </script>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+            2018 B.B Bikes - Benjamin Gittus
+          </div>
+        </div>
+      </footer>
+
+  </body>
+
+</html>

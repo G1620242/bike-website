@@ -1,37 +1,11 @@
-body {
-/*
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: black;
-	color: white;
-*/
-    display: flex;
-     min-height: 100vh;
-     flex-direction: column;
-}
-img {
-	width: 400px;
-	margin-left: auto;
-	margin-right: auto;
-}
 .nav {
   background-color: #2C3E50;
   font-family: 'Varela Round', sans-serif;
-}
-
-.card {
-background-color: #2C3E50;
-font-family: 'Varela Round', sans-serif;
-}
-.card-content{
-  color: white;
-}
-.card-action{
-  color: white;
-}
-.parallaxheader{
-    font-family: 'Varela Round', sans-serif;
+  overflow: hidden;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  top: 0;
 }
 .grey-text{
     font-size: 25px;
@@ -39,6 +13,10 @@ font-family: 'Varela Round', sans-serif;
 }
 .page-footer{
     background-color:#2C3E50;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
 }
 .collapsible-header{
     color:#2C3E50
@@ -90,19 +68,7 @@ font-family: 'Varela Round', sans-serif;
     color: white;
 }
 
-.bgvideo {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: -100;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
+
 nav.nav-center ul{
         text-align: center;
     }
@@ -120,16 +86,33 @@ display:inline-block;
     justify-content: center;
     text-align: center;
 }
+
 .logo{
     margin-top: 200px;
 }
 
 .background{
   background: #bdc3c7;
-background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
-background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+    background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
+    background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
+
 .transparentfooter {
     background-color: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
+}
+
+
+.gamewrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
