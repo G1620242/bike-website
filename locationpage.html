@@ -13,7 +13,7 @@
       <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     </head>
 
-    <body>
+    <body bgcolor="#2C3E50">
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
             <script type="text/javascript" src="js/materialize.min.js"></script>
             <script>$( document ).ready(function(){$(".button-collapse").sideNav();})</script>
@@ -26,81 +26,48 @@
 
 
               <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="beginner_guide.html">Beginner</a></li>
-                    <li class="divider"></li>
-                    <li><a href="intermediate_guide.html">Intermediate</a></li>
-                    <li class="divider"></li>
-
-                </ul>
-                <ul id="dropdown2" class="dropdown-content">
                   <li><a href="beginner_guide.html">Beginner</a></li>
                   <li class="divider"></li>
                   <li><a href="intermediate_guide.html">Intermediate</a></li>
                   <li class="divider"></li>
 
-                </ul>
-              <nav class ="nav nav-center">
-                  <div class="nav-wrapper">
-                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="hide-on-med-and-down">
-                      <li><a href="informationpage.html">Information</a></li>
-                      <li><a href="viewpage.html">View</a></li>
-                        <!--<li><img src ="assets/bbbikesplaceholder.jpg"></li> -->
-                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
-                      <li><a href="locationpage.html">Locations</a></li>
-                      <li><a href="downloadspage.html">Downloads</a></li>
-                    </ul>
-                  </div>
-                </nav>
+              </ul>
+              <ul id="dropdown2" class="dropdown-content">
+                <li><a href="beginner_guide.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="intermediate_guide.html">Intermediate</a></li>
+                <li class="divider"></li>
 
-                <ul class="sidenav" id="mobile-demo">
-                  <li><a href="informationpage.html">Information</a></li>
-                  <li><a href="viewpage.html">View</a></li>
-                  <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
-                  <li><a href="locationpage.html">Locations</a></li>
-                  <li><a href="downloadspage.html">Downloads</a></li>
+              </ul>
+            <nav class ="nav nav-center">
+                <div class="nav-wrapper">
+                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><a href="informationpage.html">Information</a></li>
+                    <li><a href="viewpage.html">View</a></li>
+                    <li><a href="gamepage2.html">Game</a></li>
+                    <li><a href="index.html"><img src="assets/B.B-Bikes-Logo3.png"></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="locationpage.html">Locations</a></li>
+                    <li><a href="downloadspage.html">Downloads</a></li>
                   </ul>
-  <!--Navbar End-->
-<div class= background <"mask rgba-gradient d-flex justify-content-center align-items-center">
+                </div>
+              </nav>
 
+              <ul class="sidenav" id="mobile-demo">
+                <li><a href="informationpage.html">Information</a></li>
+                <li><a href="viewpage.html">View</a></li>
+                <li><a href="gamepage2.html">Game</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="locationpage.html">Locations</a></li>
+                <li><a href="downloadspage.html">Downloads</a></li>
+                </ul>
+  <!--Navbar End-->
 
 <main>
-<div class="slider">
-  <ul class="slides">
-   <li>
-     <video id="my-video" class="video" muted loop>
-       <source src="assets/test.mp4" type="video/mp4">
-     </video>
-     <div class="caption left-align">
-       <h3>France</h3>
-       <h5 class="light grey-text text-lighten-3">E.</h5>
-     </div>
-   </li>
-   <li>
-     <video id="my-video1" class="video" muted loop>
-       <source src="assets/test.mp4" type="video/mp4">
-     </video>
-     <div class="caption left-align">
-       <h3>Stafford</h3>
-       <h5 class="light grey-text text-lighten-3">E</h5>
-     </div>
-   </li>
-   <li>
-     <img src="http://place-hold.it/1920x1080">
-     <div class="caption left-align">
-       <h3>Cannock Chase</h3>
-       <h5 class="light grey-text text-lighten-3">E</h5>
-     </div>
-   </li>
-   <li>
-     <img src="http://place-hold.it/1920x1080">
-     <div class="caption left-align">
-       <h3>E</h3>
-       <h5 class="light grey-text text-lighten-3">E</h5>
-     </div>
-   </li>
- </ul>
-</div>
+  <video class="responsive-video" controls>
+      <source src="assets/Location-France.mp4" type="video/mp4">
+    </video>
 
 <script>
 (function() {
@@ -123,6 +90,32 @@ video.play();
 <h5 align = "center"> Above is the various locations that different bikes can traverse this page will go into more detail about the different types of bikes that are good for different areas </h5>
 <p align = "center">France - To travel throughout France an adventure bike would be recommended </p>
 
+<br>
+
+<video class="responsive-video" controls>
+    <source src="assets/Location-Staffordshire.mp4" type="video/mp4">
+  </video>
+
+<script>
+(function() {
+/**
+* Video element
+* @type {HTMLElement}
+*/
+var video = document.getElementById("my-video");
+
+/**
+* Check if video can play, and play it
+*/
+video.addEventListener( "canplay", function() {
+video.play();
+});
+})();
+</script>
+
+
+<h5 align = "center"> Above is the various locations that different bikes can traverse this page will go into more detail about the different types of bikes that are good for different areas </h5>
+<p align = "center">France - To travel throughout France an adventure bike would be recommended </p>
 <br>
 
 <footer class="page-footer">
