@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--My Style Sheet-->
+    <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".button-collapse").sideNav();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-trigger").dropdown();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('select').material_select();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.sidenav').sidenav();
+      });
+    </script>
+
+    <!--Navbar Start-->
+
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="guidebeginnerpage.html">Beginner</a></li>
+        <li class="divider"></li>
+        <li><a href="guideintermediatepage.html">Intermediate</a></li>
+        <li class="divider"></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="guidebeginnerpage.html">Beginner</a></li>
+      <li class="divider"></li>
+      <li><a href="guideintermediatepage.html">Intermediate</a></li>
+      <li class="divider"></li>
+    </ul>
+
+    <nav class="nav nav-center">
+      <div class="nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+          <li><a href="informationpage.html">Information</a></li>
+          <li><a href="viewpage.html">View</a></li>
+          <li><a href="gamepage.html">Game</a></li>
+          <li><a href="index.html"><img src="assets/B.B-Bikes-Logo3.png"></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="locationpage.html">Locations</a></li>
+          <li><a href="downloadspage.html">Downloads</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="informationpage.html">Information</a></li>
+      <li><a href="viewpage.html">View</a></li>
+      <li><a href="gamepage.html">Game</a></li>
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="locationpage.html">Locations</a></li>
+      <li><a href="downloadspage.html">Downloads</a></li>
+    </ul>
+    <!--Navbar End-->
+    <div class=background <"mask rgba-gradient d-flex justify-content-center align-items-center">
+      <br>
+      <main>
+
+
+        <div class="container">
+
+
+                <div class="row">
+                    <div class="col s12 m6">
+                      <div class="card">
+                        <div class="card-content white-text">
+                          <span class="card-title">Adventure Bikes</span>
+                          <p class="flow-text">These bikes are ideal for beginners as they are the jack of all trades with many different useful features. Adventure Bikes tend to include long travel suspension,
+                            a screen that is perfect for navigation and maintenance. The bike also has alot of protection from the wind and crash protection with handguards and can be used offroad though it is not as effective as a offroad bike.
+                            Finally the bike includes Storage for luggage This makes the bike ideal for traveling and commuting.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+                <div class="col s12 m6">
+                  <div class="card">
+                    <div class="card-content white-text">
+                      <span class="card-title">Touring Bikes</span>
+                        <p class="flow-text">These bikes are ideal for people who want a bike only for touring long distances the bike is perfect for carrying a large amount of luggage and includes the most comfort for both people on the bike.
+                          The bike can carry large amounts of camping gear and are built to have the range to carry it and go long distances.Howver these bikes are the heaviest out of all the types of bikes due to the amount it is designed to carry
+                        but should be considered if the bike is used for long travels with alot on it.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                  <div class="col s12 m6">
+                    <div class="card">
+                      <div class="card-content white-text">
+                        <span class="card-title">Scooters</span>
+                          <p class="flow-text">While these are not bikes scooters are a good choice for people who want to move onto using bikes but dont have to confidence to spend alot of money on one this makes them ideal to learn and practice on.
+                          Scooters also include plenty of storage and confy seating making them good for regular everyday use aswell. </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col s12 m6">
+                    <div class="card">
+                      <div class="card-content white-text">
+                        <span class="card-title">Supermoto</span>
+                          <p class="flow-text">These are Rally Bikes that are designed for tracks and tarmac and are perfect for people who want a cheap bike to use in an off road environment this is becuase they are lightweight and are optimised with
+                          travel suspension allowing for comfort on dirt, hills and jumps as well as smaller on roads and trails.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+      </main>
+      <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+            2018 B.B Bikes - Benjamin Gittus
+          </div>
+        </div>
+      </footer>
+
+  </body>
+
+</html>

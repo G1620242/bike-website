@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--My Style Sheet-->
+    <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".button-collapse").sideNav();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-trigger").dropdown();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('select').material_select();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.sidenav').sidenav();
+      });
+    </script>
+
+    <!--Navbar Start-->
+
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="guidebeginnerpage.html">Beginner</a></li>
+        <li class="divider"></li>
+        <li><a href="guideintermediatepage.html">Intermediate</a></li>
+        <li class="divider"></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="guidebeginnerpage.html">Beginner</a></li>
+      <li class="divider"></li>
+      <li><a href="guideintermediatepage.html">Intermediate</a></li>
+      <li class="divider"></li>
+    </ul>
+
+    <nav class="nav nav-center">
+      <div class="nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+          <li><a href="informationpage.html">Information</a></li>
+          <li><a href="viewpage.html">View</a></li>
+          <li><a href="gamepage.html">Game</a></li>
+          <li><a href="index.html"><img src="assets/B.B-Bikes-Logo3.png"></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="locationpage.html">Locations</a></li>
+          <li><a href="downloadspage.html">Downloads</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="informationpage.html">Information</a></li>
+      <li><a href="viewpage.html">View</a></li>
+      <li><a href="gamepage.html">Game</a></li>
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Guide<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="locationpage.html">Locations</a></li>
+      <li><a href="downloadspage.html">Downloads</a></li>
+    </ul>
+    <!--Navbar End-->
+    <div class=background <"mask rgba-gradient d-flex justify-content-center align-items-center">
+      <br>
+      <main>
+
+
+        <div class="container">
+
+
+                <div class="row">
+                    <div class="col s12 m6">
+                      <div class="card">
+                        <div class="card-content white-text">
+                          <span class="card-title">Adventure Off-Road Bikes</span>
+                          <p class="flow-text">These bikes are better for more experienced users as they are more built for off road and therefore have more features that may be daunting or uncomfortable for new drivers.
+                            these features include more crash protection an increased fuel tank and raised seats these features make the bike better on offroad but more difficult in other situations therefore a more experienced driver may find
+                            this bike perfect for off road driving.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+                <div class="col s12 m6">
+                  <div class="card">
+                    <div class="card-content white-text">
+                      <span class="card-title">Retro Bikes</span>
+                        <p class="flow-text">These bikes are sometimes known as roadsters and are designed with a flatter handlebars, no screen and the engine being showcased this is a design choice.
+                        because of this design choice these bikes are more recommened for experienced driver as alot of the features that are useful are removed for a more retro design if you want a bike with this type of design then a retro car is a good choice.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                  <div class="col s12 m12">
+                    <div class="card">
+                      <div class="card-content white-text">
+                        <span class="card-title">Sports Bikes</span>
+                          <p class="flow-text">These bikes are designed to go as as fast as possible and therefore the weight of these bikes are minimised and the engine power is maximised. To also improve speed these bikes have a design to help meaning you drive in a lower position.
+                          These bikes are known to be uncomfortable to drive and therefore are only recommended if you are buying the bike to reach a high speed quickly. Alternatively the Sports Tourer is an alterative that is alot slower but is more comfortable and still has the sleek design of a sports bike that appeals to people.
+                        This could be another choice if the sports bike if you want a bike for looks and less for the speed it can perform.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+      </main>
+      <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+            2018 B.B Bikes - Benjamin Gittus
+          </div>
+        </div>
+      </footer>
+
+  </body>
+
+</html>
