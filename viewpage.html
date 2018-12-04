@@ -17,13 +17,10 @@
     <body>
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
-      <script type="text/javascript" src="js/plugins/tooltipster/SVG/tooltipster-SVG.min.js"></script>
       <script>$( document ).ready(function(){$(".button-collapse").sideNav();});</script>
       <script>$( document ).ready(function(){$(".dropdown-trigger").dropdown();});</script>
       <script>$(document).ready(function() {$('select').material_select();});</script>
       <script>$(document).ready(function(){$('.sidenav').sidenav();});</script>
-      <script>$(document).ready(function() {$('.tooltip').tooltipster();});</script>
 
               <!--Navbar Start-->
 
@@ -82,40 +79,44 @@
               />
                <rect
                   id="one"
-                     class="tooltip"data-placement="top" title="One!"
+                     class="tooltipped" data-position="bottom" data-tooltip="Mirror" 
                   x="115.62" y="60.75" width="70" height ="90"
 
              />
 
                <rect
                   id="one"
-                     class="tooltip" title="Mirror"
+                     class="tooltipped" data-position="bottom" data-tooltip="Mirror" 
                   x="110.62" y="425.75" width="70" height ="90"
              />
-            <script>$(document).ready(function(){$('.tooltip').tooltipster();});</script>
 
              <rect
                 id="one"
-                   data-toggle="tooltip" data-placement="top" title="Two!"
+                   class="tooltipped" data-position="bottom" data-tooltip="Fuel Cap" 
                 x="425.62" y="260.20" width="70" height ="60"
            />
            <rect
               id="one"
-                 data-toggle="tooltip" data-placement="top" title="Two!"
+                 class="tooltipped" data-position="bottom" data-tooltip="Dashboard" 
               x="225.62" y="260.20" width="70" height ="60"
          />
          <rect
             id="one"
-               data-toggle="tooltip" data-placement="top" title="Two!"
+               class="tooltipped" data-position="bottom" data-tooltip="Handles" 
             x="270.62" y="410.20" width="70" height ="60"
        />
        <rect
           id="one"
-             data-toggle="tooltip" data-placement="top" title="Two!"
+             class="tooltipped" data-position="bottom" data-tooltip="Handles" 
           x="270.62" y="110.20" width="70" height ="60"
      />
 
              </svg>
+      <script>
+       $(document).ready(function(){
+            $('.tooltipped').tooltip();
+        });   
+      </script>
 <hr>
              </div>
              <div class="row col s12">
@@ -140,6 +141,8 @@
     </div>
   </div>
 </footer>
+      
+      
 
     </body>
   </html>

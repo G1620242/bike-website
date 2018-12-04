@@ -115,7 +115,7 @@ rect {
   opacity: 1;
 }
 #one:hover {
-  fill: grey;
+  fill: green;
   opacity: 0.5
 }
 
