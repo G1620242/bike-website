@@ -107,6 +107,7 @@ background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
   width: 70%;
     margin: 0 auto;
 }
+
 rect {
   fill: transparent;
   transition: 1s;
@@ -114,6 +115,7 @@ rect {
   stroke-width: 2px;
   opacity: 1;
 }
+
 #one:hover {
   fill: green;
   opacity: 0.5
